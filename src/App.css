@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+.formWrapper {
+  background: #282a36;
+  width: 50%;
+  padding: 30px;
+}
+.asideWrap {
+  background: #1c1e29;
+}
+.editorWrap {
+  background: #393d51;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  background: #008564;
+  padding: 5px;
+  font-weight: bolder;
+  border-radius: 5px;
+}
+button:hover {
+  background: #00a99d;
+  transition: all 0.3s ease-in-out;
+  scale: 1.04;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1c1e29;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.CodeMirror {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-size: 15px;
+  line-height: 1.6;
+  padding-top: 20px;
 }
