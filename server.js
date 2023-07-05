@@ -25,7 +25,6 @@ const getAllConnetedClients = (roomId) => {
 
 io.on('connection', (socket) => {
     console.log('socket connected', socket.id);
-
     //listen for join event
     socket.on(ACTIONS.JOIN, ({ roomId, userName }) => {
         //map socket id with user name
